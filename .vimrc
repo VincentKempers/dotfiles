@@ -16,17 +16,16 @@ Plug 'mattn/emmet-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-eunuch'
-Plug 'liuchengxu/space-vim-dark'
-Plug 'tpope/vim-surround'
 Plug 'https://github.com/leafgarland/typescript-vim.git'
 Plug 'https://github.com/ap/vim-css-color.git'
-
+Plug 'morhetz/gruvbox'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tomtom/tcomment_vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'Raimondi/delimitMate'
 Plug 'kien/ctrlp.vim'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'posva/vim-vue'
 
 " HTML CSS
 Plug 'othree/html5.vim'
@@ -43,7 +42,7 @@ filetype plugin indent on    " required
 
 map <C-\> :NERDTreeToggle <CR>
 
-colorscheme space-vim-dark
+colorscheme gruvbox
 hi Comment guifg=#5C6370 ctermfg=59
 
 set encoding=utf-8
@@ -56,9 +55,6 @@ set clipboard=unnamed           " Yanks go on clipboard instead.
 set showcmd                     " display incomplete commands
 set showmatch                   " show matching braces
 
-" autocomplete CSS
-filetype plugin on
-set omnifunc=syntaxcomplete#Complete
 
 " whitespace
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
@@ -71,6 +67,10 @@ set nofoldenable                " Say no to code folding...
 set antialias
 set shiftround
 set ai
+
+" relative numbers
+set relativenumber
+set rnu
 
 "" nerdtree
 
