@@ -1,2 +1,2 @@
 # dotfiles
-Dotfiles mostly vim and/or emacs stuff
+Dotfiles mostly vim stuff
