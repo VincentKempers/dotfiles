@@ -6,37 +6,50 @@ call plug#begin()
 " Declare the list of plugins.
 Plug 'tpope/vim-sensible'
 Plug 'nightsense/carbonized'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+" gitgutter
 Plug 'airblade/vim-gitgutter'
+" editorconfig
 Plug 'editorconfig/editorconfig-vim'
+" lightline
 Plug 'itchyny/lightline.vim'
+" emmet
 Plug 'mattn/emmet-vim'
-Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'tpope/vim-eunuch'
-Plug 'https://github.com/leafgarland/typescript-vim.git'
 Plug 'https://github.com/ap/vim-css-color.git'
 Plug 'morhetz/gruvbox'
+" Plug 'joshdick/onedark.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'tomtom/tcomment_vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'Raimondi/delimitMate'
 Plug 'kien/ctrlp.vim'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'posva/vim-vue'
+" NERDTREE
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
 
-" HTML CSS
+" language support
+Plug 'sheerun/vim-polyglot'
+" HTMu CSS
 Plug 'othree/html5.vim'
 
 " JavaScript
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'posva/vim-vue'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
+
+let g:coc_global_extensions = [
+  \ 'coc-snippets',
+  \ 'coc-pairs',
+  \ 'coc-tsserver',
+  \ 'coc-eslint',
+  \ 'coc-prettier',
+  \ 'coc-json',
+  \ ]
 
 filetype plugin indent on    " required
 
