@@ -3,7 +3,7 @@
 
 
 #Path to your oh-my-zsh installation.
-export ZSH=/Users/vincentkempers/.oh-my-zsh
+export ZSH=/Users/${compootername}/.oh-my-zsh
 
 export TERM=screen-256color
 
@@ -109,13 +109,10 @@ source ~/.bash_profile
 export N_PREFIX=$HOME/.n
 export PATH=$N_PREFIX/bin:$PATH
 
-alias personal="ssh-add -D; ssh-add ~/.ssh/id_rsa"
-alias personalgit="git config user.name 'vincentkempers'; git config user.email 'me@vncn.tk';"
-
 
 ###-tns-completion-start-###
-if [ -f /Users/vincentkempers/.tnsrc ]; then
-    source /Users/vincentkempers/.tnsrc;
+if [ -f /Users/${Compootername}/.tnsrc ]; then
+    source /Users/${Compootername}/.tnsrc;
 fi
 ###-tns-completion-end-###
 #export PATH="/usr/local/opt/node@10/bin:$PATH"
