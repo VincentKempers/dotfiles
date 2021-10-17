@@ -3,7 +3,7 @@
 
 
 #Path to your oh-my-zsh installation.
-export ZSH=/Users/${compootername}/.oh-my-zsh
+export ZSH=/Users/${Compootername}/.oh-my-zsh
 
 export TERM=screen-256color
 
@@ -103,6 +103,12 @@ alias npm-global="npm ls -global --depth=0"
 
 
 alias composer="php /usr/local/bin/composer.phar"
+alias lvim="/Users/Compootername/.local/bin/lvim"
+
+source ~/.bash_profile
+
+export N_PREFIX=$HOME/.n
+export PATH=$N_PREFIX/bin:$PATH
 
 source ~/.bash_profile
 
